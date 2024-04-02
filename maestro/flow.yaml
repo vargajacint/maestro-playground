@@ -1,0 +1,17 @@
+appId: ${APP_ID}
+---
+- launchApp
+- assertVisible: 'Weather'
+- assertVisible:
+    id: 'weather-row-button'
+- tapOn:
+    id: 'weather-row-button'
+    index: 0
+- assertVisible: 'Kyiv'
+- assertVisible: 'Country'
+- assertVisible: 'Humidity'
+- assertVisible: 'Pressure'
+- assertVisible: 'Max teperature'
+- assertVisible: 'Min teperature'
+- assertVisible: 'Feels like'
+- assertVisible: 'Wind speed'
